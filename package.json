@@ -1,7 +1,7 @@
 {
     "name": "root",
     "private": true,
-    "engines": { 
+    "engines": {
         "node": ">=20"
     },
     "workspaces": [
@@ -20,19 +20,20 @@
         "start": "npm run build && lerna run start --scope=storybook-app"
     },
     "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^5.42.1",
-        "@typescript-eslint/parser": "^5.42.1",
-        "eslint": "^8.27.0",
-        "eslint-config-prettier": "^8.5.0",
-        "eslint-config-react-app": "^7.0.1",
-        "eslint-plugin-github": "^4.4.1",
-        "eslint-plugin-jsx-a11y": "^6.6.1",
-        "eslint-plugin-prettier": "^4.2.1",
+        "@typescript-eslint/eslint-plugin": "^8.59.0",
+        "@typescript-eslint/parser": "^8.59.0",
+        "eslint": "^8.57.1",
+        "eslint-config-prettier": "^8.10.2",
+                "eslint-plugin-github": "^4.10.2",
+        "eslint-plugin-jest": "^29.15.2",
+        "eslint-plugin-jsx-a11y": "^6.10.2",
+        "eslint-plugin-prettier": "^4.2.5",
+        "eslint-plugin-react": "^7.37.5",
+        "eslint-plugin-react-hooks": "^7.1.1",
         "eslint-plugin-sonarjs": "^0.16.0",
-        "eslint-plugin-unicorn": "^44.0.2",
-        "husky": "^8.0.2",
-        "lerna": "^8.1.8",
-        "prettier": "^2.8.0"
+                "husky": "^8.0.3",
+        "lerna": "^8.2.4",
+        "prettier": "^2.8.8"
     },
     "author": {
         "name": "Joël Piazzalunga-Lerat"

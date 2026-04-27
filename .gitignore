@@ -33,3 +33,7 @@ Thumbs.db
 
 # Ignore built ts files
 dist
+
+# TypeScript incremental build cache
+*.tsbuildinfo
+*tsbuildinfo

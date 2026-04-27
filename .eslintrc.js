@@ -8,11 +8,16 @@ module.exports = {
         'plugin:github/recommended',
         'plugin:jsx-a11y/recommended',
         'plugin:sonarjs/recommended',
-        'plugin:unicorn/recommended',
-        'prettier',
-        'react-app'
+        'plugin:react/jsx-runtime',
+        'plugin:react-hooks/recommended',
+        'prettier'
     ],
-    plugins: ['@typescript-eslint', 'github', 'jsx-a11y', 'prettier', 'sonarjs'],
+    plugins: ['@typescript-eslint', 'github', 'jsx-a11y', 'prettier', 'sonarjs', 'react', 'react-hooks'],
+    settings: {
+        react: {
+            version: 'detect'
+        }
+    },
     overrides: [
         {
             files: ['*.test.ts'],
@@ -21,9 +26,7 @@ module.exports = {
             globals: {
                 __dirname: true
             },
-            rules: {
-                'unicorn/prefer-module': 'off' // To be able to use __dirname
-            }
+            rules: {}
         }
     ],
     rules: {
@@ -38,7 +41,6 @@ module.exports = {
         'import/no-named-as-default': 'off', // doesn't work well
         'import/no-named-as-default-member': 'off', // takes too long
         'import/no-unresolved': 'off',
-        'unicorn/no-null': 'off',
         // ERRORS
         '@typescript-eslint/no-unused-vars': 'error',
         'import/extensions': [
@@ -67,29 +69,6 @@ module.exports = {
             }
         ],
         'no-console': 'error',
-        'prettier/prettier': 'error',
-        'unicorn/filename-case': [
-            'error',
-            {
-                cases: {
-                    camelCase: true,
-                    pascalCase: true
-                }
-            }
-        ],
-        'unicorn/prevent-abbreviations': [
-            'error',
-            {
-                replacements: {
-                    prop: false,
-                    props: false,
-                    i: false,
-                    str: false,
-                    args: false,
-                    doc: false,
-                    docs: false
-                }
-            }
-        ]
+        'prettier/prettier': 'error'
     }
 };

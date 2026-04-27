@@ -8,7 +8,12 @@
         "storybook",
         "ts2doc"
     ],
+    "type": "module",
     "main": "lib/preset.js",
+    "exports": {
+        "./preset": "./lib/preset.js",
+        "./package.json": "./package.json"
+    },
     "files": [
         "lib/preset.js"
     ],
@@ -28,9 +33,9 @@
         "@storybook/components": "^8.0.0",
         "@ts2doc/components": "^0.4.0",
         "@ts2doc/json": "^0.4.0",
-        "fs-extra": "^11.1.0",
-        "glob": "^8.0.3",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "fs-extra": "^11.3.4",
+        "glob": "^11.0.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
     }
 }
