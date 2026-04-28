@@ -2,7 +2,7 @@
     "name": "root",
     "private": true,
     "engines": {
-        "node": ">=22.12"
+        "node": "^20.19 || ^22.12 || >=24"
     },
     "workspaces": [
         "packages/*",
@@ -32,7 +32,7 @@
         "eslint-plugin-react-hooks": "^7.1.1",
         "eslint-plugin-sonarjs": "^0.16.0",
         "husky": "^8.0.3",
-        "lerna": "^8.2.4",
+        "lerna": "^9.0.7",
         "prettier": "^2.8.8"
     },
     "author": {
