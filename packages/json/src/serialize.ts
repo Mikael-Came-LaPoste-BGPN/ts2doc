@@ -55,7 +55,7 @@ function serializeJsDoc(symbol: ts.Symbol): JsDocTags {
                 if (jsDocTagsSerialized.links == null) {
                     jsDocTagsSerialized.links = [];
                 }
-                const [href, ...text] = tagValue.split(/ |\|/);
+                const [href, ...text] = tagValue.split(/[ |]/);
                 jsDocTagsSerialized.links.push({
                     href,
                     text: text.join(' ').trim()
@@ -63,7 +63,7 @@ function serializeJsDoc(symbol: ts.Symbol): JsDocTags {
                 break;
             }
             case 'type': {
-                jsDocTagsSerialized[tagName] = tagValue.replace(/{|}/g, '');
+                jsDocTagsSerialized[tagName] = tagValue.replace(/[{}]/g, '');
                 break;
             }
             case 'deprecated': {

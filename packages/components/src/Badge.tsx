@@ -6,7 +6,7 @@ interface BadgeProps {
 }
 
 export function Badge({ children, status }: BadgeProps) {
-    let backgroundColor = '';
+    let backgroundColor: string;
     switch (status) {
         case 'danger': {
             backgroundColor = '#f5222d';
