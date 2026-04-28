@@ -5,7 +5,7 @@
     "keywords": [
         "typescript",
         "documentation",
-        "storybook",
+        "storybook-addon",
         "ts2doc"
     ],
     "type": "module",
@@ -29,8 +29,10 @@
         "url": "https://github.com/jpiazzal/ts2doc/issues"
     },
     "homepage": "https://github.com/jpiazzal/ts2doc#readme",
+    "peerDependencies": {
+        "storybook": "^10.0.0"
+    },
     "dependencies": {
-        "@storybook/components": "^8.0.0",
         "@ts2doc/components": "^0.4.0",
         "@ts2doc/json": "^0.4.0",
         "fs-extra": "^11.3.4",

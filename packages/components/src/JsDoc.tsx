@@ -1,5 +1,5 @@
-import { A, UL, LI } from '@storybook/components';
 import { Link } from '@ts2doc/json';
+import { A, UL, LI } from 'storybook/internal/components';
 
 interface LinksProps {
     links: Link[];

@@ -94,7 +94,7 @@ In your `.mdx` file, to document a TypeScript exported declaration:
 ```js
 /* src/movie.stories.mdx */
 
-import { Meta } from '@storybook/addon-docs';
+import { Meta } from '@storybook/addon-docs/blocks';
 import { InterfaceDoc } from '@ts2doc/components';
 // Always import the doc.json file with the following path
 import doc from '.cache/ts2doc/doc.json';

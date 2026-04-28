@@ -1,5 +1,5 @@
-import { H3, H4, Table, P, Code } from '@storybook/components';
 import { InterfaceDeclaration } from '@ts2doc/json';
+import { H3, H4, Table, P, Code } from 'storybook/internal/components';
 
 import { Badge } from './Badge';
 import { Links } from './JsDoc';
